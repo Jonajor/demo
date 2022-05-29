@@ -7,8 +7,12 @@ eureka:
     leaseExpirationDurationInSeconds: 2
   client:
     serviceUrl:
-      defaultZone: https://eureka-server-letscode.herokuapp.com
+      defaultZone: https://eureka-server-letscode.herokuapp.com/eureka/
     healthcheck:
       enabled: true
     lease:
       duration: 5
+
+spring:
+  application:
+    name: demo-service  #service name
