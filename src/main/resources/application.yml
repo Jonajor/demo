@@ -16,3 +16,9 @@ eureka:
 spring:
   application:
     name: demo-service  #service name
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: *
